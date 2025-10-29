@@ -59,6 +59,30 @@ return {
   --
   -- -- == Examples of Overriding Plugins ==
   --
+  {
+    "akinsho/bufferline.nvim",
+    -- does this undo other config?
+    config = function()
+      require("bufferline").setup {
+        options = {
+          show_buffer_close_icons = false,
+          show_close_icon = false,
+          style_preset = {
+            require("bufferline").style_preset.no_italic,
+            require("bufferline").style_preset.no_bold,
+          },
+        },
+      }
+    end,
+    -- opts = {
+    --   show_buffer_close_icons = false,
+    --   show_close_icon = false,
+    --   style_preset = {
+    --     require("bufferline").style_preset.no_italic,
+    --     require("bufferline").style_preset.no_bold,
+    --   },
+    -- },
+  },
   -- -- customize dashboard options
   -- {
   --   "folke/snacks.nvim",

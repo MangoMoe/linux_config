@@ -9,155 +9,45 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python" },
-  {
-    import = "astrocommunity.bars-and-lines.feline-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.bars-and-lines.vim-illuminate",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.bars-and-lines.dropbar-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.colorscheme.fluoromachine-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.colorscheme.catppuccin",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.comment.mini-comment",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.completion.mini-completion",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.completion.tabby-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.docker.lazydocker",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.auto-save-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.mini-operators",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.mini-splitjoin",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.cloak-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.codecompanion-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.conform-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.dial-nvim",
-    enabled = true,
-  },
+  { import = "astrocommunity.bars-and-lines.bufferline-nvim" },
+  { import = "astrocommunity.bars-and-lines.vim-illuminate" },
+  { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
+  { import = "astrocommunity.colorscheme.fluoromachine-nvim" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.comment.mini-comment" },
+  { import = "astrocommunity.completion.mini-completion" },
+  { import = "astrocommunity.completion.tabby-nvim" },
+  { import = "astrocommunity.docker.lazydocker" },
+  { import = "astrocommunity.editing-support.auto-save-nvim" },
+  { import = "astrocommunity.editing-support.mini-operators" },
+  { import = "astrocommunity.editing-support.mini-splitjoin" },
+  { import = "astrocommunity.editing-support.cloak-nvim" },
+  { import = "astrocommunity.editing-support.codecompanion-nvim" },
+  { import = "astrocommunity.editing-support.conform-nvim" },
+  { import = "astrocommunity.editing-support.dial-nvim" },
   -- {
   --   import = "astrocommunity.editing-support.multicursors-nvim",
   --   enabled = true,
   -- },
-  {
-    import = "astrocommunity.editing-support.nvim-origami",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.quick-scope",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.rainbow-delimiters-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.refactoring-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.suda-vim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.text-case-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.todo-comments-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.ultimate-autopair-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.vim-exchange",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.editing-support.wildfire-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.file-explorer.mini-files",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.fuzzy-finder.telescope-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.indent.indent-blankline-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.markdown-and-latex.markdown-preview-nvim",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.motion.mini-ai",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.motion.mini-basics",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.motion.mini-bracketed",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.motion.mini-jump",
-    enabled = true,
-  },
-  {
-    import = "astrocommunity.motion.mini-move",
-    enabled = true,
-  },
-  -- {
-  --   import = "astrocommunity.motion.mini-surround",
-  --   enabled = true,
-  -- },
-  {
-    import = "astrocommunity.motion.nvim-surround",
-  },
+  { import = "astrocommunity.editing-support.nvim-origami" },
+  { import = "astrocommunity.editing-support.quick-scope" },
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
+  { import = "astrocommunity.editing-support.refactoring-nvim" },
+  { import = "astrocommunity.editing-support.suda-vim" },
+  { import = "astrocommunity.editing-support.text-case-nvim" },
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
+  { import = "astrocommunity.editing-support.vim-exchange" },
+  { import = "astrocommunity.editing-support.wildfire-nvim" },
+  { import = "astrocommunity.file-explorer.mini-files" },
+  { import = "astrocommunity.fuzzy-finder.telescope-nvim" },
+  { import = "astrocommunity.indent.indent-blankline-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.motion.mini-ai" },
+  { import = "astrocommunity.motion.mini-basics" },
+  { import = "astrocommunity.motion.mini-bracketed" },
+  { import = "astrocommunity.motion.mini-jump" },
+  { import = "astrocommunity.motion.mini-move" },
+  -- { import = "astrocommunity.motion.mini-surround", },
+  { import = "astrocommunity.motion.nvim-surround" },
 }

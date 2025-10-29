@@ -7,7 +7,7 @@ if status is-interactive
 	# export ZELLIJ_AUTO_EXIT=true
 	if set -q ZELLIJ
 	else
-		zellij attach -c
+		zellij attach -c --index 0
 	  # eval (zellij setup --generate-auto-start fish | string collect)
 	end
 end
