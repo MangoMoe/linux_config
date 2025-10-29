@@ -11,3 +11,5 @@ if status is-interactive
 	  # eval (zellij setup --generate-auto-start fish | string collect)
 	end
 end
+fish_add_path /home/dallin/.pixi/bin
+fish_add_path /home/dallin/.local/bin
