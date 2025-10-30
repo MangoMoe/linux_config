@@ -1,15 +1,20 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize Treesitter
 
 ---@type LazySpec
 return {
   "nvim-treesitter/nvim-treesitter",
+  branch = "main",
+  build = ":TSUpdate",
   opts = {
     ensure_installed = {
       "lua",
       "vim",
       -- add more arguments for adding more treesitter parsers
+      "css",
+      "typescript",
     },
   },
+  config = function(_, opts) require("nvim-treesitter.configs").setup(opts) end,
 }

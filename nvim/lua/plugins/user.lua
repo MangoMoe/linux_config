@@ -47,6 +47,22 @@ return {
     version = "*",
     config = function() require("mini.jump2d").setup { mappings = { start_jumping = "<leader>s" } } end,
   },
+  {
+    "HiPhish/rainbow-delimiters.nvim",
+    config = function()
+      require("rainbow-delimiters.setup").setup {
+        highlight = {
+          "RainbowDelimiterBlue",
+          "RainbowDelimiterOrange",
+          "RainbowDelimiterGreen",
+          "RainbowDelimiterViolet",
+          "RainbowDelimiterCyan",
+          "RainbowDelimiterRed",
+          "RainbowDelimiterYellow",
+        },
+      }
+    end,
+  },
 
   -- == Examples of Adding Plugins ==
 
