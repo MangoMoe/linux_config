@@ -1,16 +1,17 @@
 if status is-interactive
 	# Commands to run in interactive sessions can go here
 
+	# so apparently fish already has this stored as a variable...
 	# Determine username from the fish paths
-	string match -rq "/home/(?<username>[a-zA-z_-]+)/" $fish_user_paths
-	# echo "Username is: $username"
+	# string match -rq "/home/(?<username>[a-zA-z_-]+)/" $fish_user_paths
+	echo "Username is: $USER"
 
-	set -gx ZELLIJ_CONFIG_FILE "/home/$username/.config/zellij/config.kdl"
+	set -gx ZELLIJ_CONFIG_FILE "/home/$USER/.config/zellij/config.kdl"
 
 	# Uh oh I have neovim in different places...
 	fish_add_path /opt/nvim-linux-x86_64/bin
-	fish_add_path /home/$username/.pixi/bin
-	fish_add_path /home/$username/.local/bin
+	fish_add_path /home/$USER/.pixi/bin
+	fish_add_path /home/$USER/.local/bin
 
 	set -gx ZELLIJ_AUTO_ATTACH true
 	# set -gx ZELLIJ_AUTO_EXIT true
