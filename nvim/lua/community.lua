@@ -14,7 +14,7 @@ return {
   { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
   -- { import = "astrocommunity.colorscheme.fluoromachine-nvim" },
   -- { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.comment.mini-comment" },
+  -- { import = "astrocommunity.comment.mini-comment" },
   -- { import = "astrocommunity.completion.mini-completion" },
   -- { import = "astrocommunity.completion.tabby-nvim" },
   -- { import = "astrocommunity.docker.lazydocker" },

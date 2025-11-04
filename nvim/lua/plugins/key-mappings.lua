@@ -6,6 +6,10 @@ return {
       mappings = {
         -- first key is the mode
         n = {
+          ["`"] = { "'" },
+          ["'"] = { "`" },
+          -- Probably have to disable whatever comment plugin astronvim uses
+          -- ["<C-_>"] = { function() require("Comment.api").toggle.linewise.current() end },
           -- second key is the lefthand side of the map
           ["<space>"] = { "@q", desc = "Run `q` macro" },
           -- mappings seen under group name "Buffer"

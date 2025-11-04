@@ -73,8 +73,8 @@ return {
   --   config = function() require("lsp_signature").setup() end,
   -- },
   --
-  -- -- == Examples of Overriding Plugins ==
-  --
+  -- == Examples of Overriding Plugins ==
+
   {
     "akinsho/bufferline.nvim",
     -- does this undo other config?
@@ -99,6 +99,18 @@ return {
     --   },
     -- },
   },
+
+  -- {
+  --   "numToStr/Comment.nvim",
+  --   config = function()
+  --     require("Comment.nvim").setup {
+  --       options = {
+  --         ignore = "^$",
+  --       },
+  --     }
+  --   end,
+  -- },
+
   -- -- customize dashboard options
   -- {
   --   "folke/snacks.nvim",
