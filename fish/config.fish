@@ -22,6 +22,8 @@ if status is-interactive
 	set -gx SUDO_EDITOR /home/$USER/.local/bin/nvim
 
 	abbr --add ff --set-cursor "rg -i. --no-ignore --color always '%' | less -Xr"
+	abbr --add za "zellij attach -c --index 0"
+	abbr --add sf "source ~/.config/fish/config.fish"
 
 	if set -q ZELLIJ
 	else
