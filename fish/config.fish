@@ -4,7 +4,7 @@ if status is-interactive
 	# so apparently fish already has this stored as a variable...
 	# Determine username from the fish paths
 	# string match -rq "/home/(?<username>[a-zA-z_-]+)/" $fish_user_paths
-	echo "Username is: $USER"
+	# echo "Username is: $USER"
 
 	set -gx ZELLIJ_CONFIG_FILE "/home/$USER/.config/zellij/config.kdl"
 
@@ -15,8 +15,11 @@ if status is-interactive
 
 	set -gx ZELLIJ_AUTO_ATTACH true
 	# set -gx ZELLIJ_AUTO_EXIT true
-	set -gx EDITOR nvim
-	set -gx VISUAL nvim
+
+	# Set editor for various functions to neovim
+	set -gx EDITOR /home/$USER/.local/bin/nvim
+	set -gx VISUAL /home/$USER/.local/bin/nvim
+	set -gx SUDO_EDITOR /home/$USER/.local/bin/nvim
 
 	abbr --add ff --set-cursor "rg -i. --no-ignore --color always '%' | less -Xr"
 
