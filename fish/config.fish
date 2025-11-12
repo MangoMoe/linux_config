@@ -24,6 +24,8 @@ if status is-interactive
 	abbr --add ff --set-cursor "rg -i. --no-ignore --color always '%' | less -Xr"
 	abbr --add za "zellij attach -c --index 0"
 	abbr --add sf "source ~/.config/fish/config.fish"
+	abbr --add cb --set-cursor "% | base64 | xargs -I{} printf '\033]52;c;%s\a' {}"
+	 
 
 	if set -q ZELLIJ
 	else
