@@ -64,6 +64,12 @@ return {
     end,
   },
 
+  {
+    "chentoast/marks.nvim",
+    event = "VeryLazy",
+    opts = {},
+  },
+
   -- == Examples of Adding Plugins ==
 
   -- "andweeb/presence.nvim",
