@@ -20,6 +20,10 @@ if status is-interactive
 	set -gx EDITOR /home/$USER/.local/bin/nvim
 	set -gx VISUAL /home/$USER/.local/bin/nvim
 	set -gx SUDO_EDITOR /home/$USER/.local/bin/nvim
+	if set -q TERM
+	else
+		set -gx TERM xterm-color
+	end
 
 	abbr --add ff --set-cursor "rg -i. --no-ignore --color always '%' | less -Xr"
 	abbr --add za "zellij attach -c --index 0"
