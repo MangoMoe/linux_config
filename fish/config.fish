@@ -17,9 +17,9 @@ if status is-interactive
 	# set -gx ZELLIJ_AUTO_EXIT true
 
 	# Set editor for various functions to neovim
-	set -gx EDITOR /home/$USER/.local/bin/nvim
-	set -gx VISUAL /home/$USER/.local/bin/nvim
-	set -gx SUDO_EDITOR /home/$USER/.local/bin/nvim
+	set -gx EDITOR /opt/nvim-linux-x86_64/bin
+	set -gx VISUAL /opt/nvim-linux-x86_64/bin
+	set -gx SUDO_EDITOR /opt/nvim-linux-x86_64/bin
 	if set -q TERM
 	else
 		set -gx TERM xterm-color
@@ -38,3 +38,4 @@ if status is-interactive
 	end
 
 end
+fish_add_path /home/mangomoe/.pixi/bin
