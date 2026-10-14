@@ -48,6 +48,10 @@ return {
     config = function() require("mini.jump2d").setup { mappings = { start_jumping = "<leader>s" } } end,
   },
   {
+    "RitschAlex/jupyter_ascending.nvim",
+    config = function() require("jupyter_ascending").setup() end,
+  },
+  {
     "HiPhish/rainbow-delimiters.nvim",
     config = function()
       require("rainbow-delimiters.setup").setup {
