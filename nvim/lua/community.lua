@@ -10,7 +10,7 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python" },
   -- { import = "astrocommunity.bars-and-lines.bufferline-nvim" },
-  { import = "astrocommunity.bars-and-lines.vim-illuminate" },
+  -- { import = "astrocommunity.bars-and-lines.vim-illuminate" },
   { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
   -- { import = "astrocommunity.colorscheme.fluoromachine-nvim" },
   -- { import = "astrocommunity.colorscheme.catppuccin" },
