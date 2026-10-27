@@ -11,7 +11,7 @@ return {
           -- Probably have to disable whatever comment plugin astronvim uses
           -- ["<C-_>"] = { function() require("Comment.api").toggle.linewise.current() end },
           -- second key is the lefthand side of the map
-          ["<space>"] = { "@q", desc = "Run `q` macro" },
+          -- ["<space>"] = { "@q", desc = "Run `q` macro" },
           -- mappings seen under group name "Buffer"
           ["<Leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
           -- ["<Leader>bD"] = {
