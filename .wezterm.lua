@@ -13,9 +13,15 @@ local config = wezterm.config_builder()
 -- or, changing the font size and color scheme.
 config.font_size = 18
 -- config.color_scheme = "carbonfox"
-config.color_scheme = 'cyberpunk'
+-- config.color_scheme = 'cyberpunk'
 -- config.color_scheme = 'Dark Violet (base16)'
 -- config.color_scheme = 'Aci (Gogh)'
+-- config.color_scheme = 'Icy Dark (base16)'
+-- config.color_scheme = 'jubi'
+-- config.color_scheme = 'Laser'
+-- config.color_scheme = 'Material Palenight (base16)'
+config.color_scheme = 'Neon'
+-- config.color_scheme = 'Neon Night (Gogh)'
 config.font = wezterm.font("DepartureMono Nerd Font")
 
 -- Finally, return the configuration to wezterm:
