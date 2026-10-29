@@ -29,6 +29,7 @@ return {
           -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
           -- ["<Leader>bg"] = { "<cmd>BufferLinePick<cr>" },
           -- nnoremap <silent> gb :BufferLinePick<CR>
+          ["<Leader>s"] = { "<cmd>HopAnywhere<cr>" },
         },
         t = {
           -- setting a mapping to false will disable it

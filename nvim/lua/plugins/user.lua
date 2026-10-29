@@ -7,6 +7,13 @@
 ---@type LazySpec
 return {
   {
+    "wsdjeg/hop.nvim",
+    version = "*",
+    opts = {
+      keys = "etovxqpdygfblzhckisuran",
+    },
+  },
+  {
     "maxmx03/fluoromachine.nvim",
     lazy = false,
     priority = 1000,
@@ -42,11 +49,11 @@ return {
       vim.cmd.colorscheme "fluoromachine"
     end,
   },
-  {
-    "nvim-mini/mini.jump2d",
-    version = "*",
-    config = function() require("mini.jump2d").setup { mappings = { start_jumping = "<leader>s" } } end,
-  },
+  -- {
+  --   "nvim-mini/mini.jump2d",
+  --   version = "*",
+  --   config = function() require("mini.jump2d").setup { mappings = { start_jumping = "<leader>s" } } end,
+  -- },
   {
     "RitschAlex/jupyter_ascending.nvim",
     config = function() require("jupyter_ascending").setup() end,
