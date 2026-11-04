@@ -31,20 +31,22 @@ return {
       disabled = { -- disable formatting capabilities for the listed language servers
         -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
         -- "lua_ls",
+        -- "ruff",
       },
-      timeout_ms = 1000, -- default format timeout
+      timeout_ms = 2000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
       --   return true
       -- end
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      -- "pyright",
+      "basedpyright",
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      clangd = { capabilities = { offsetEncoding = "utf-16" } },
     },
     -- customize how language servers are attached
     handlers = {

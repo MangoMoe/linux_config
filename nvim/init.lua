@@ -27,5 +27,6 @@ require "lazy_setup"
 require "polish"
 
 -- Not sure if this fixed things, but `pip install venv` did
-local user_profile = vim.fn.getenv 'USERPROFILE'
-vim.g.python3_host_prog = user_profile .. 'AppData\\Local\\Python\\pythoncore-3.15-64'
+local user_profile = vim.fn.getenv "USERPROFILE"
+vim.g.python3_host_prog = user_profile .. "AppData\\Local\\Python\\pythoncore-3.15-64"
+
