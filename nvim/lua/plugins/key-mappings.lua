@@ -3,6 +3,20 @@ return {
     "AstroNvim/astrocore",
     ---@type AstroCoreOpts
     opts = {
+      autocmds = {
+        -- first key is the augroup name
+        terminal_settings = {
+          -- the value is a list of autocommands to create
+          {
+            -- event is added here as a string or a list-like table of events
+            -- event = "VimEnter",
+            event = "FileType",
+            -- the rest of the autocmd options (:h nvim_create_autocmd)
+            desc = "Insert mode text replacements",
+            callback = function() vim.keymap.set("ia", "cell", "# %%", { buffer = true }) end,
+          },
+        },
+      },
       mappings = {
         -- first key is the mode
         n = {
@@ -29,7 +43,10 @@ return {
           -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
           -- ["<Leader>bg"] = { "<cmd>BufferLinePick<cr>" },
           -- nnoremap <silent> gb :BufferLinePick<CR>
-          ["<Leader>s"] = { "<cmd>HopAnywhere<cr>" },
+          ["<Leader>s"] = { "<cmd>HopChar1<cr>" },
+          ["<Leader>j"] = { desc = "Jupyter Ascending" },
+          ["<Leader>js"] = { "<cmd>JupyterStartServer<cr>", desc = "Start Jupyter Server for Synced File" },
+          ["<Leader>jk"] = { "<cmd>JupyterStopServer<cr>", desc = "Kill/Stop Jupyter Server for Synced File" },
         },
         t = {
           -- setting a mapping to false will disable it
