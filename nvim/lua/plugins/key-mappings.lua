@@ -43,7 +43,7 @@ return {
           -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
           -- ["<Leader>bg"] = { "<cmd>BufferLinePick<cr>" },
           -- nnoremap <silent> gb :BufferLinePick<CR>
-          ["<Leader>s"] = { "<cmd>HopChar1<cr>" },
+          ["<Leader>s"] = { "<cmd>HopChar1<cr>", desc = "Jump to typed character with hints" },
           ["<Leader>j"] = { desc = "Jupyter Ascending" },
           ["<Leader>js"] = { "<cmd>JupyterStartServer<cr>", desc = "Start Jupyter Server for Synced File" },
           ["<Leader>jk"] = { "<cmd>JupyterStopServer<cr>", desc = "Kill/Stop Jupyter Server for Synced File" },

@@ -243,6 +243,20 @@ load_plugins {
   // "https://example.com/my-plugin.wasm"
 }
 
+terminal {
+    font "DepartureMono Nerd Font"
+    font_size 1
+    // theme blade-runner
+    // line_height 1.1
+    // padding 8
+    // opacity 0.95
+    // blur true
+    // cursor_style "bar"
+    // theme {
+    //     background "#101010"
+    // }
+}
+
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 // eg. when terminal window with an active zellij session is closed
 // (Requires restart)
@@ -800,7 +814,11 @@ themes {
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "cyber-noir"
+// theme "blade-runner"
+// theme "cyber-noir"
+theme "lucario"
+// theme "retro-wave"
+// theme "atelier-sulphurpool"
 
 // The name of the default layout to load on startup
 // Default: "default"
